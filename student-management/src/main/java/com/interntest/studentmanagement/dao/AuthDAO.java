@@ -1,12 +1,13 @@
 package com.interntest.studentmanagement.dao;
 
+import com.interntest.studentmanagement.entity.User;
+
 import javax.sql.DataSource;
 import java.sql.*;
 
 public class AuthDAO {
 
-    public static boolean login(String username, String password) throws SQLException {
-
+    public static User login(String username, String password) throws SQLException {
         Connection myConn = null;
         PreparedStatement myPs = null;
         ResultSet myRs = null;
@@ -15,8 +16,7 @@ public class AuthDAO {
             Class.forName("com.mysql.cj.jdbc.Driver");
             String user = "root";
             String pass = "Motconvit1";
-            myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web-student-tracker", user, pass);
-
+            myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_student_tracker", user, pass);
             String sql = "SELECT * FROM user WHERE username = ? AND password = ?";
 
             // query with parameters
@@ -26,7 +26,13 @@ public class AuthDAO {
 
             myRs = myPs.executeQuery();
 
-            return myRs.next();
+            if (myRs.next()) {
+                User loginUser = new User(myRs.getString(8), myRs.getString(4), myRs.getString(5), myRs.getString(6), myRs.getString(7));
+
+                return loginUser;
+            } else {
+                return null;
+            }
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         } finally {
