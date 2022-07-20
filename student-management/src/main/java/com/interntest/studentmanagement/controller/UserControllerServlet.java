@@ -20,7 +20,6 @@ public class UserControllerServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
         // get users from db
         try {
             List<User> users = UserDAO.getUsers();

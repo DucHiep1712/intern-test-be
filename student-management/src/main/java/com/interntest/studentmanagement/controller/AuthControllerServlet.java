@@ -46,6 +46,7 @@ public class AuthControllerServlet extends HttpServlet {
 
             if (validUser != null) {
                 jsonObject.put("status", "success");
+                jsonObject.put("id", validUser.getId());
                 jsonObject.put("role", validUser.getRole());
                 jsonObject.put("firstName", validUser.getFirst_name());
                 jsonObject.put("lastName", validUser.getLast_name());

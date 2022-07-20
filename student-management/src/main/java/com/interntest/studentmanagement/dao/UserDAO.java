@@ -47,7 +47,6 @@ public class UserDAO {
 
                 // create new user object
                 User tempUser = new User(id, username, password, role, firstName, lastName, email, phone);
-                System.out.println(tempUser.toString());
 
                 // add to user list
                 users.add(tempUser);
@@ -62,7 +61,8 @@ public class UserDAO {
         }
     }
 
-    public static void modifyUser(User myUser) throws ClassNotFoundException, SQLException {
+    public static void modifyUser(User myUser, String modifyType) throws ClassNotFoundException, SQLException {
+        System.out.println(modifyType);
 
         Connection myConn = null;
         PreparedStatement myPs = null;
@@ -73,22 +73,30 @@ public class UserDAO {
             myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_student_tracker", user, pass);
 
             // query to execute
-            String sql = "UPDATE user\n" +
-                    "SET username = ?, password = ?, first_name = ?, last_name = ?, email = ?, phone = ?, role = ?\n" +
-                    "WHERE id = ?";
+                System.out.println(modifyType.equals("student") ? "Dung" : "Sai");
 
-            myPs = myConn.prepareStatement(sql);
-            myPs.setString(1, myUser.getUsername());
-            myPs.setString(2, myUser.getPassword());
-            myPs.setString(3, myUser.getFirst_name());
-            myPs.setString(4, myUser.getLast_name());
-            myPs.setString(5, myUser.getEmail());
-            myPs.setString(6, myUser.getPhone());
-            myPs.setString(7, myUser.getRole());
-            myPs.setString(8, String.valueOf(myUser.getId()));
+                String sql = (modifyType.equals("student") ? ("UPDATE user SET username = "
+                    + "'" + myUser.getUsername() + "'" + ", password = "
+                    + "'" + myUser.getPassword() + "'" + ", first_name = "
+                    + "'" + myUser.getFirst_name() + "'" + ", last_name = "
+                    + "'" + myUser.getLast_name() + "'" + ", email = "
+                    + "'" + myUser.getEmail() + "'" + ", phone = "
+                    + "'" + myUser.getPhone() + "'" + ", role = "
+                    + "'" + myUser.getRole() + "'" + " WHERE id = "
+                    + String.valueOf(myUser.getId())) :
+                    ("UPDATE user SET first_name = "
+                    + "'" + myUser.getFirst_name() + "'" + ", last_name = "
+                    + "'" + myUser.getLast_name() + "'" + ", email = "
+                    + "'" + myUser.getEmail() + "'" + ", phone = "
+                    + "'" + myUser.getPhone() + "'" + ", role = "
+                    + "'" + myUser.getRole() + "'" + " WHERE id = "
+                    + String.valueOf(myUser.getId())));
 
-            // execute query
-            myPs.executeQuery(sql);
+                myPs = myConn.prepareStatement(sql);
+
+                // execute query
+                myPs.executeUpdate(sql);
+                System.out.println(sql);
         }
         finally {
 

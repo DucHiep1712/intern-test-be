@@ -27,7 +27,7 @@ public class AuthDAO {
             myRs = myPs.executeQuery();
 
             if (myRs.next()) {
-                User loginUser = new User(myRs.getString(8), myRs.getString(4), myRs.getString(5), myRs.getString(6), myRs.getString(7));
+                User loginUser = new User(Integer.valueOf(myRs.getString(1)), myRs.getString(8), myRs.getString(4), myRs.getString(5), myRs.getString(6), myRs.getString(7));
 
                 return loginUser;
             } else {

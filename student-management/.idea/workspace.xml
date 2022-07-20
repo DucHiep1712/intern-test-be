@@ -10,22 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="691b85f4-da35-4e3a-8a14-613cd6f84a6e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/intern-test-be.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/interntest/studentmanagement/controller/UserModifyControllerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/student_management_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/student_management_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/student_management_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/student_management_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cca002f6-d14d-4c68-80a9-f857b7f0df05.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/interntest/studentmanagement/controller/AuthControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interntest/studentmanagement/controller/AuthControllerServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/interntest/studentmanagement/controller/UserControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interntest/studentmanagement/controller/UserControllerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/interntest/studentmanagement/controller/UserModifyControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interntest/studentmanagement/controller/UserModifyControllerServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/interntest/studentmanagement/dao/AuthDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interntest/studentmanagement/dao/AuthDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/interntest/studentmanagement/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interntest/studentmanagement/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/interntest/studentmanagement/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interntest/studentmanagement/entity/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,9 +66,10 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.29655173" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -463,7 +456,8 @@
       <workItem from="1658112491244" duration="297000" />
       <workItem from="1658131688765" duration="730000" />
       <workItem from="1658136601018" duration="688000" />
-      <workItem from="1658142717235" duration="21812000" />
+      <workItem from="1658142717235" duration="24696000" />
+      <workItem from="1658243188019" duration="8415000" />
     </task>
     <servers />
   </component>

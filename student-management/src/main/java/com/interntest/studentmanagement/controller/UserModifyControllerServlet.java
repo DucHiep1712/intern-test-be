@@ -31,24 +31,21 @@ public class UserModifyControllerServlet extends HttpServlet {
         ObjectMapper mapper = new ObjectMapper();
         JsonNode node = mapper.readTree(String.valueOf(sb));
 
+        String modifyType = node.get("modifyType").asText();
+        System.out.println("Day " + modifyType);
         String id = node.get("id").asText();
-        System.out.println(id);
         String username = node.get("username").asText();
-        System.out.println(username);
         String password = node.get("password").asText();
-        System.out.println(password);
         String firstName = node.get("firstName").asText();
         String lastName = node.get("lastName").asText();
         String email = node.get("email").asText();
         String phone = node.get("phone").asText();
         String role = node.get("role").asText();
-        System.out.println(id + username + password + firstName + lastName + email + phone + role);
 
         User toModify = new User(Integer.valueOf(id), username, password, role, firstName, lastName, email, phone);
-//        System.out.println(toModify.toString());
 
         try {
-            UserDAO.modifyUser(toModify);
+            UserDAO.modifyUser(toModify, modifyType);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
