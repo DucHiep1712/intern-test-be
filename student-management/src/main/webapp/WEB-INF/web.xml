@@ -11,7 +11,7 @@
         <filter-class>com.interntest.studentmanagement.config.CORSFilter</filter-class>
         <init-param>
             <param-name>cors.allowed.origins</param-name>
-            <param-value>https://62d92ccf164c7b283f735333--gilded-malabi-34fe2c.netlify.app/</param-value>
+            <param-value>https://62d931b106773a2e74c57b0b--gilded-malabi-34fe2c.netlify.app/</param-value>
         </init-param>
         <init-param>
             <param-name>cors.allowed.methods</param-name>
