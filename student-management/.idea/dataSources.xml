@@ -15,5 +15,12 @@
       <jdbc-url>jdbc:mysql://localhost:3306/web_student_tracker</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="MysqlDeploy" uuid="cb8880ed-bbfb-43eb-a6a6-efa5ff412b70">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://us-cdbr-east-06.cleardb.net:3306/heroku_d270d79324c27ba</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
