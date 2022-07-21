@@ -12,13 +12,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="691b85f4-da35-4e3a-8a14-613cd6f84a6e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/interntest/studentmanagement/config/CORSFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/interntest/studentmanagement/dao/AuthDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interntest/studentmanagement/dao/AuthDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/interntest/studentmanagement/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interntest/studentmanagement/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-    </list>
+    <list default="true" id="691b85f4-da35-4e3a-8a14-613cd6f84a6e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -459,7 +453,7 @@
       <workItem from="1658142717235" duration="24696000" />
       <workItem from="1658243188019" duration="9017000" />
       <workItem from="1658331882940" duration="596000" />
-      <workItem from="1658394708320" duration="883000" />
+      <workItem from="1658394708320" duration="1098000" />
     </task>
     <servers />
   </component>
