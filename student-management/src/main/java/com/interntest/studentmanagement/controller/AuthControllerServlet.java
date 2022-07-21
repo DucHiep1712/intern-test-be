@@ -21,6 +21,14 @@ import java.sql.SQLException;
 public class AuthControllerServlet extends HttpServlet {
 
     @Override
+    protected void doOptions(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        response.setHeader("Access-Control-Allow-Origin", "*");
+        response.setHeader("Access-Control-Allow-Methods", "GET, HEAD, PUT, POST, OPTIONS");
+        response.setHeader("Access-Control-Allow-Headers", "Content-Type");
+        response.setHeader("Allow", "GET, HEAD, PUT, POST, OPTIONS");
+    }
+
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
             StringBuilder sb = new StringBuilder();

@@ -16,9 +16,15 @@ import java.sql.SQLException;
 public class UserModifyControllerServlet extends HttpServlet {
 
     @Override
+    protected void doOptions(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        response.setHeader("Access-Control-Allow-Origin", "*");
+        response.setHeader("Access-Control-Allow-Methods", "GET, HEAD, PUT, POST, OPTIONS");
+        response.setHeader("Access-Control-Allow-Headers", "Content-Type");
+        response.setHeader("Allow", "GET, HEAD, PUT, POST, OPTIONS");
+    }
+
+    @Override
     protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.addHeader("Access-Control-Allow-Origin", "*");
-        response.addHeader("Access-Control-Allow-Methods","GET, HEAD, PUT, POST");
 
         StringBuilder sb = new StringBuilder();
         BufferedReader reader = request.getReader();
