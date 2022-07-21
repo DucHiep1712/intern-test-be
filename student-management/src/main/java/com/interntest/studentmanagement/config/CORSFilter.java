@@ -33,7 +33,7 @@ public class CORSFilter implements Filter {
         System.out.println("CORSFilter HTTP Request: " + request.getMethod());
 
         // Authorize (allow) all domains to consume the content
-        ((HttpServletResponse) servletResponse).addHeader("Access-Control-Allow-Origin", "https://62d92ccf164c7b283f735333--gilded-malabi-34fe2c.netlify.app/");
+        ((HttpServletResponse) servletResponse).addHeader("Access-Control-Allow-Origin", "https://62d931b106773a2e74c57b0b--gilded-malabi-34fe2c.netlify.app/");
         ((HttpServletResponse) servletResponse).addHeader("Access-Control-Allow-Methods","GET, OPTIONS, HEAD, PUT, POST");
 
         HttpServletResponse resp = (HttpServletResponse) servletResponse;
