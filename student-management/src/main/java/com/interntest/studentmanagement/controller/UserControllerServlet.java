@@ -24,6 +24,7 @@ public class UserControllerServlet extends HttpServlet {
         response.setHeader("Access-Control-Allow-Methods", "GET, HEAD, PUT, POST, OPTIONS");
         response.setHeader("Access-Control-Allow-Headers", "Content-Type");
         response.setHeader("Allow", "GET, HEAD, PUT, POST, OPTIONS");
+        response.setStatus(200);
     }
 
     @Override
