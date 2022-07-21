@@ -59,6 +59,8 @@ public class AuthControllerServlet extends HttpServlet {
             PrintWriter out = response.getWriter();
             response.setContentType("application/json");
             response.setCharacterEncoding("UTF-8");
+            response.addHeader("Access-Control-Allow-Origin", "https://heroku-student-mysql.netlify.app/");
+            response.addHeader("Access-Control-Allow-Methods","GET, HEAD, PUT, POST");
             out.print(jsonObject);
             out.flush();
         } catch (SQLException e) {
