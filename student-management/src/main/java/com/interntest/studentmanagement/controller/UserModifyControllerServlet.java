@@ -17,6 +17,9 @@ public class UserModifyControllerServlet extends HttpServlet {
 
     @Override
     protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.addHeader("Access-Control-Allow-Origin", "*");
+        response.addHeader("Access-Control-Allow-Methods","GET, HEAD, PUT, POST");
+
         StringBuilder sb = new StringBuilder();
         BufferedReader reader = request.getReader();
         try {
