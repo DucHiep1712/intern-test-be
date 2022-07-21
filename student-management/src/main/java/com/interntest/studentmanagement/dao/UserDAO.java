@@ -9,8 +9,8 @@ import java.util.List;
 
 public class UserDAO {
 
-    private static final String user = "root";
-    private static final String pass = "Motconvit1";
+    private static final String user = "b25131f71c7615";
+    private static final String pass = "05abb8e8";
 
     public static List<User> getUsers() throws Exception {
         List<User> users = new ArrayList<>();
@@ -22,7 +22,7 @@ public class UserDAO {
         try {
             // initialize connection
             Class.forName("com.mysql.cj.jdbc.Driver");
-            myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_student_tracker", user, pass);
+            myConn = DriverManager.getConnection("jdbc:mysql://us-cdbr-east-06.cleardb.net/heroku_67da19d58870791", user, pass);
 
             // query to execute
             String sql = "SELECT * FROM user ORDER BY last_name";

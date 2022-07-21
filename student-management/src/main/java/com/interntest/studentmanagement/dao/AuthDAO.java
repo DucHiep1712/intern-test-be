@@ -14,9 +14,9 @@ public class AuthDAO {
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            String user = "root";
-            String pass = "Motconvit1";
-            myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_student_tracker", user, pass);
+            String user = "b25131f71c7615";
+            String pass = "05abb8e8";
+            myConn = DriverManager.getConnection("jdbc:mysql://us-cdbr-east-06.cleardb.net/heroku_67da19d58870791", user, pass);
             String sql = "SELECT * FROM user WHERE username = ? AND password = ?";
 
             // query with parameters
