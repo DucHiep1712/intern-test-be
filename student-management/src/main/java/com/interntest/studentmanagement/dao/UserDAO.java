@@ -70,7 +70,7 @@ public class UserDAO {
         try {
             // initialize connection
             Class.forName("com.mysql.cj.jdbc.Driver");
-            myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/web_student_tracker", user, pass);
+            myConn = DriverManager.getConnection("jdbc:mysql://us-cdbr-east-06.cleardb.net/heroku_d270d79324c27ba", user, pass);
 
             // query to execute
                 System.out.println(modifyType.equals("student") ? "Dung" : "Sai");

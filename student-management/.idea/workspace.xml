@@ -14,10 +14,7 @@
   <component name="ChangeListManager">
     <list default="true" id="691b85f4-da35-4e3a-8a14-613cd6f84a6e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/interntest/studentmanagement/config/CORSFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/interntest/studentmanagement/controller/AuthControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interntest/studentmanagement/controller/AuthControllerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/interntest/studentmanagement/controller/UserControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interntest/studentmanagement/controller/UserControllerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/interntest/studentmanagement/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interntest/studentmanagement/dao/UserDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -467,6 +464,9 @@
       <workItem from="1658401315302" duration="717000" />
       <workItem from="1658402120792" duration="155000" />
       <workItem from="1658402688101" duration="32000" />
+      <workItem from="1658403071343" duration="47000" />
+      <workItem from="1658410389322" duration="70000" />
+      <workItem from="1658410477473" duration="17000" />
     </task>
     <servers />
   </component>
